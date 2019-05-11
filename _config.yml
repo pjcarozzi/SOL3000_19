@@ -1,7 +1,7 @@
-title: "SOL300_19"
+title: "SOL3000 - Diseño y Análisis de la Investigación Social"
 author: "Pia Carozzi"
-description: "Ayudantía Diseño de la Investigación Social"
-lang: "en"
+description: "Ayudantía"
+lang: "es"
 
 # Page settings
 permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
@@ -12,7 +12,7 @@ post_footer: true            # show previous and next links at the end of each p
 # Theme settings
 dark_theme: false            # use the dark mode as default
 dark_header: true           # keep the header dark
-# style: minimal             # use a simpler style inspired by the minima theme
+style: minimal             # use a simpler style inspired by the minima theme
 
 navigation:                  # (optional) site navigation in the header
 #  - index.html
