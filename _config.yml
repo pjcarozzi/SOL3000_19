@@ -25,8 +25,8 @@ icons:                       # (optional) icons in the header, see http://fontaw
   rss: "/SOL3000_19/feed.xml"
 
 # Pagination
-show_excerpts: true         # preview articles on the home page
-paginate: 8                  # number of articles per page
+show_excerpts: false         # preview articles on the home page
+paginate: 10                  # number of articles per page
 excerpt_separator: "\n\n\n"  # indicate the end of the excerpt by two blank lines
 
 comments:                    # embed disqus or isso comments
