@@ -6,7 +6,9 @@
 <li>Variables y Propiedades</li>
 </ol>
 <figure>
+<center>
 <img src="https://raw.githubusercontent.com/pjcarozzi/SOL3000_19/master/_posts/img/a1_1_fig1.jpg" align="middle" alt="Figura 1. Interface de usuario" /><figcaption>Figura 1. Interface de usuario</figcaption>
+</center>
 </figure>
 <p>Stata es un programa que opera a traves de comandos. Los comandos pueden ser escritos en la ventana <em>Command</em> o ejecutados desde un <em>do-file</em>.</p>
 <p>Cuando se ejecuta un comando, los resultados aparecen en la ventana <em>Results</em>.</p>
@@ -16,7 +18,9 @@
 <pre class='stata'>. doedit
 </pre>
 <figure>
+<center>  
 <img src="https://raw.githubusercontent.com/pjcarozzi/SOL3000_19/master/_posts/img/a1_1_fig2.jpg" align="middle" alt="Figura 2. Do-file editor" /><figcaption>Figura 2. Do-file editor</figcaption>
+</center>  
 </figure>
 <p>Con esto se abre el <em>do-file editor</em>, por ahora una ventana en blanco que muestra la pestaña <em>untitled.do</em> que identifica el archivo que acabamos de crear.</p>
 <p>El <em>do-file editor</em> permite editar los scripts o archivos de ordenes de Stata, llamados <em>do-files</em>.</p>
@@ -29,12 +33,16 @@
 <li>Varias lineas con /*** y ***/</li>
 </ol>
 <figure>
+<center>  
 <img src="https://raw.githubusercontent.com/pjcarozzi/SOL3000_19/master/_posts/img/a1_1_fig3.jpg" align="middle" alt="Figura 3. Comentarios en un do-file" /><figcaption>Figura 3. Comentarios en un do-file</figcaption>
+</center>  
 </figure>
 <p>Todo lo que ha sido identificado como comentario y reconocido por Stata quedara registrado en el <em>do-file</em> en color verde.</p>
 <p>Convencionalmente, las primeras lineas de un <em>do-file</em> incluyen un encabezado que identifica el proyecto, nombre de archivo, la version del programa, fecha, autor y otros datos que se consideren relevantes. Por ejemplo, Ingresamos la siguiente informacion en el <em>do-file</em> recien creado. Como no se trata de comandos, la identificamos como comentario.</p>
 <figure>
+<center>
 <img src="https://raw.githubusercontent.com/pjcarozzi/SOL3000_19/master/_posts/img/a1_1_fig4.jpg" align="middle" alt="Figura 4. Encabezado en un do-file" /><figcaption>Figura 4. Encabezado en un do-file</figcaption>
+</center>
 </figure>
 <p>Otra convencion es que la primera linea de comando identifique la version de Stata para la cual se escribio el <em>do-file</em>. Esto permite que versiones mas recientes del programa reconozcan los comandos. Si no sabemos con certeza que version estamos usando, usamos <code>version</code>.</p>
 <pre class='stata'>. version
