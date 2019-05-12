@@ -15,7 +15,7 @@ dark_header: true            # keep the header dark
 # style: minimal             # use a simpler style inspired by the minima theme
 
 navigation:                  # (optional) site navigation in the header
-  - index.html
+#  - index.html
 #  - README.md
 #  - title: "https://"       # linking external sites is also supported
 
