@@ -21,7 +21,7 @@ dark_header: true            # keep the header dark
 
 navigation:                  # (optional) site navigation in the header
 #  - index.html
-#  - README.md
+  - README.md
 #  - title: "https://"       # linking external sites is also supported
 
 icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
@@ -30,7 +30,7 @@ icons:                       # (optional) icons in the header, see http://fontaw
   rss: "/SOL3000_19/feed.xml"
 
 # Pagination
-show_excerpts: false         # preview articles on the home page
+show_excerpts: true          # preview articles on the home page
 paginate: 8                  # number of articles per page
 excerpt_separator: "\n\n\n"  # indicate the end of the excerpt by two blank lines
 
