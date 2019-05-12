@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<body>
 <h2 id="explorar-base-de-datos">Explorar base de datos</h2>
 <p>Descargamos la base de datos <a href="https://www.dropbox.com/s/3ydnojfh37en52n/data_casen_2017_1p.dta?dl=0" title="datos">data_casen_2017_1p</a>, y la guardamos en la carpeta de trabajo declarada para esta sesion. La base contiene una muestra aleatoria de 1% de <a href="http://observatorio.ministeriodesarrollosocial.gob.cl/casen-multidimensional/casen/casen_2017.php" title="Fuente">Casen 2017</a> y una seleccion de variables.</p>
 <p>Abrimos la base de datos.</p>
 <pre class='stata'>. use "data/data_casen_2017_1p.dta", clear
 </pre>
-<p>Revisemos lo que contiene la base</p>
+<p>Revisemos lo ue contiene la base</p>
 <pre class='stata'>. describe
 
 Contains data from data/data_casen_2017_1p.dta
-  obs:         2,164
- vars:            29                          21 March 2019 23:53
- size:       502,048
+  obs:         2,164                          
+ vars:            29                          11 May 2019 23:53
+ size:       502,048                          
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
               storage   display    value
 variable name   type    format     label      variable label
@@ -54,24 +51,24 @@ Sorted by: folio
 <p>Otro comando basico para explorar variables y observaciones es <code>list</code>, que nos muestra, caso a caso, los valores registrados para cada variable. Podemos imprimir los valores para todas las variables y observaciones, seleccionar algunas variables o seleccionar algunas observaciones.</p>
 <p>Cuando no existe el valor para una determinada variable, es decir, se trata de un caso perdido, Stata lo identifica con un punto (.).</p>
 <p>Revisemos las variables sexo y escolaridad para las primeras 10 observaciones</p>
-
 <pre class='stata'>. list folio sexo esc in 1/10
-─────────────────────────────
-   folio              sexo        esc 
-─────────────────────────────
-1    1.101e+11    Mujer        9 
-2    1.101e+11    Mujer        . 
-3    1.101e+11   Hombre     9 
-4    1.101e+11   Hombre    17
-5    1.101e+11   Hombre    17 
-─────────────────────────────
-6    1.101e+11   Hombre     . 
-7    1.101e+11    Mujer       10 
-8    1.101e+11   Hombre    16 
-9    1.101e+11   Hombre     . 
-10  1.101e+11   Hombre     . 
-─────────────────────────────</pre>
 
+     ┌──────────────────────────┐
+     │     folio     sexo   esc │
+     ├──────────────────────────┤
+  1. │ 1.101e+11    Mujer     9 │
+  2. │ 1.101e+11    Mujer     . │
+  3. │ 1.101e+11   Hombre     9 │
+  4. │ 1.101e+11   Hombre    17 │
+  5. │ 1.101e+11   Hombre    17 │
+     ├──────────────────────────┤
+  6. │ 1.101e+11   Hombre     . │
+  7. │ 1.101e+11    Mujer    10 │
+  8. │ 1.101e+11   Hombre    16 │
+  9. │ 1.101e+11   Hombre     . │
+ 10. │ 1.101e+11   Hombre     . │
+     └──────────────────────────┘
+</pre>
 <p>Otro comando basico es <code>sort</code>, que nos permite ordenar las observaciones segun una determinada variable. Ordenamos los datos ascendentemente segun escolaridad.</p>
 <pre class='stata'>. sort esc
 </pre>
@@ -81,11 +78,11 @@ Sorted by: folio
      ┌──────────────────────────┐
      │     folio     sexo   esc │
      ├──────────────────────────┤
-  1. │ 5.101e+11   Hombre     0 │
-  2. │ 9.101e+11   Hombre     0 │
-  3. │ 1.360e+12   Hombre     0 │
-  4. │ 6.114e+11   Hombre     0 │
-  5. │ 4.102e+11   Hombre     0 │
+  1. │ 1.330e+12   Hombre     0 │
+  2. │ 1.313e+12    Mujer     0 │
+  3. │ 8.109e+11    Mujer     0 │
+  4. │ 6.115e+11    Mujer     0 │
+  5. │ 7.401e+11    Mujer     0 │
      └──────────────────────────┘
 </pre>
 <p>Los 5 primeros casos tienen 0 años de escolaridad.</p>
@@ -97,7 +94,9 @@ Sorted by: folio
 </pre>
 <p>Ejecutado el comando, aparece la ventana <em>Viewer</em> con los resultados de la busqueda, identificando sus fuentes.</p>
 <figure>
+<center>
 <img src="https://raw.githubusercontent.com/pjcarozzi/SOL3000_19/master/_posts/img/a1_2_fig1.jpg" alt="Figura 1. Viewer search heteroskedasticity test" /><figcaption>Figura 1. Viewer search heteroskedasticity test</figcaption>
+</center>
 </figure>
 <p><code>help</code> seguido por el nombre de un comando entrega los archivos de ayuda asociados a dicho comando. <code>help</code> es, por lejos, el comando mas util para aprender a usar Stata.</p>
 <p>Localicemos informacion de uno de los comandos que ya han utilizado en clase.</p>
@@ -105,7 +104,9 @@ Sorted by: folio
 </pre>
 <p>Nuevamente, se abrira ventana <em>Viewer</em>.</p>
 <figure>
+<center>
 <img src="https://raw.githubusercontent.com/pjcarozzi/SOL3000_19/master/_posts/img/a1_2_fig2.jpg" alt="Figura 2. Viewer help summarize" /><figcaption>Figura 2. Viewer help summarize</figcaption>
+</center>
 </figure>
 <p>El primer vinculo bajo el titulo, que aparece precedido por una [R], enlaza la entrada correspondiente a <code>summarize</code> en el <em>Stata Base Reference Manual</em>. Si hacemos click, accedemos esta documentacion, en formato <em>pdf</em>, que esta en los archivos locales del programa.</p>
 <p>Volvamos a mirar la ventana de visor. El segundo titulo, <em>Syntax</em>, nos muestra la sintaxis del comando. Como si fuera una oracion gramatical, la sintaxis nos indica las reglas que gobiernan el uso del comando, a que se aplica y las opciones que acepta.</p>
@@ -180,5 +181,3 @@ Sorted by: folio
 99%           19             22       Kurtosis       2.936748
 </pre>
 <p>Nos muestra adicionalmente los percentiles, la varianza, asimetria y curtosis.</p>
-</body>
-</html>
