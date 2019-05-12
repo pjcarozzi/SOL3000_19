@@ -9,7 +9,9 @@ Utilizando la base de datos [data\_casen\_2017\_1p](https://www.dropbox.com/s/8f
 
 <details>
 
-  <summary>Codigo</summary>
+  <summary>
+  Codigo
+  </summary>
 
 ```
 codebook edad
