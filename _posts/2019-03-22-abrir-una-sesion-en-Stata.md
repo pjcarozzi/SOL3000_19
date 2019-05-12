@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-</head>
-<body>
-<header id="title-block-header">
-<h1 class="title">Abrir una sesion en Stata</h1>
-<p class="author">Pia Carozzi</p>
-</header>
 <p>Al abrir Stata, podemos reconocer cuatro ventanas basicas</p>
 <ol type="1">
 <li>Resultados</li>
@@ -102,5 +93,3 @@ C:\Users\pjcar\Desktop\ayudantia1
  closed on:  21 March 2019, 21:18:00
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 </pre>
-</body>
-</html>
