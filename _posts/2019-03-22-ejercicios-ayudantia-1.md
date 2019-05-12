@@ -3,6 +3,7 @@
 Utilizando la base de datos [data\_casen\_2017\_1p](https://www.dropbox.com/s/8fo5oebnzdxtoxe/data_casen_2017_1prc.dta?dl=0 "Casen 2017"):
 
 1. Recodificar la variable _edad_ por tramos (_tedad_), que contemple los tramos: 0-14; 15-19; 20-24;25-34; 35-44; 45-54; 55-64; 65 y más.
+
 <details>
   <summary><a class="btnfire small stroke"><em class="fas fa-chevron-circle-down"></em>&nbsp;&nbsp;Codigo</a></summary>
 
@@ -19,22 +20,22 @@ replace tedad1=8 if edad>=65
 replace tedad1=. if edad==.
 tab tedad1
 label variable tedad1 "Tramos edad"
-label define etramos	1"0-14" 			//// 
-							2"15-19" 		//// 
-							3"20-24" 		//// 
-							4"25-34" 		//// 
-							5"35-44" 		//// 
-							6"45-54" 		//// 
-							7"55-64" 		//// 
-							8"65 y mas"
+label define etramos 1"0-14" 		//// 
+					 2"15-19" 		//// 
+					 3"20-24" 		//// 
+					 4"25-34" 		//// 
+					 5"35-44" 		//// 
+					 6"45-54" 		//// 
+					 7"55-64" 		//// 
+					 8"65 y mas"
 label values tedad1 etramos
 tab tedad1, m
 
 /* Alternativamente */
 gen tedad1=edad
 recode tedad1 (0/14=1)(15/19=2)(20/24=3) 	////
-				  (25/34=4)(35/44=5)(45/54=6)	////
-				  (55/64=7)(65/110=8)
+			  (25/34=4)(35/44=5)(45/54=6)	////
+			  (55/64=7)(65/110=8)
 replace tedad1=. if edad==.
 label variable tedad1 "Tramos edad"
 label values tedad1 etramos
@@ -63,3 +64,7 @@ Deje ns/nr como casos perdidos.
 6. Utilizando la variable _depen_, genere una tabla univariada que dé cuenta de la distribución de porcentajes por dependencia educacional entre quienes asisten a unestablecimiento educacional. Recodifique antes NS/NR como caso perdido. ¿Cuál es la moda? ¿Qué porcentaje de la muestra asiste a una universidad del CRUCH?
 
 7. Genere tablas univariadas que le permitan comparar la distribución por dependencia educacional y zona de residencia entre quienes tienen 17 años o menos. Interprete los resultados.
+
+````
+
+````
