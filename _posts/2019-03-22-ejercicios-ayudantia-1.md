@@ -9,9 +9,7 @@ Utilizando la base de datos [data\_casen\_2017\_1p](https://www.dropbox.com/s/8f
 
 <details>
 
-  <summary>
-  Codigo
-  </summary>
+  <summary markdown="span"><code>codigo</code></summary>
 
 ```
 codebook edad
@@ -27,21 +25,21 @@ replace tedad1=. if edad==.
 tab tedad1
 label variable tedad1 "Tramos edad"
 label define etramos 1"0-14" 		//// 
-					 2"15-19" 		//// 
-					 3"20-24" 		//// 
-					 4"25-34" 		//// 
-					 5"35-44" 		//// 
-					 6"45-54" 		//// 
-					 7"55-64" 		//// 
-					 8"65 y mas"
+				2"15-19" 		//// 
+				3"20-24" 		//// 
+				4"25-34" 		//// 
+				5"35-44" 		//// 
+				6"45-54" 		//// 
+				7"55-64" 		//// 
+				8"65 y mas"
 label values tedad1 etramos
 tab tedad1, m
 
 /* Alternativamente */
 gen tedad1=edad
 recode tedad1 (0/14=1)(15/19=2)(20/24=3) 	////
-			  (25/34=4)(35/44=5)(45/54=6)	////
-			  (55/64=7)(65/110=8)
+			(25/34=4)(35/44=5)(45/54=6)	////
+			(55/64=7)(65/110=8)
 replace tedad1=. if edad==.
 label variable tedad1 "Tramos edad"
 label values tedad1 etramos
