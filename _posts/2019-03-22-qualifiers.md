@@ -54,7 +54,7 @@
 <tr class="even">
 <td>&lt; Menor que</td>
 <td>- Sustraccion</td>
-<td></td>
+<td>| O</td>
 </tr>
 <tr class="odd">
 <td>&gt;= Mayor o igual que</td>
