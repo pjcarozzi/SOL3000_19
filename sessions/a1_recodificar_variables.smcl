@@ -1,0 +1,490 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\pjcar\Google Drive\201901 - Diseno y Analisis de la Investigacion Social\sol3000_19\SOL3000_19\sessions\a1_recodificar_variables.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}12 May 2019, 02:05:03
+{txt}
+{com}. //_1
+. describe
+
+{txt}Contains data from {res}data/data_casen_2017_1p.dta
+{txt}  obs:{res}         2,164                          
+{txt} vars:{res}            29                          11 May 2019 23:53
+{txt} size:{res}       502,048                          
+{txt}{hline}
+              storage   display    value
+variable name   type    format     label      variable label
+{hline}
+{p 0 48}{res}{bind:folio          }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Identificacion hogar (comuna area seg viv hogar){p_end}
+{p 0 48}{bind:o              }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Orden{p_end}
+{p 0 48}{bind:id_vivienda    }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Identificador de la vivienda (comuna area seg viv){p_end}
+{p 0 48}{bind:hogar          }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Identificacion del hogar en la vivienda{p_end}
+{p 0 48}{bind:region         }{txt}{bind: double  }{bind:{txt}%49.0g    }{space 1}{bind:region   }{bind:  }{res}{res}Region{p_end}
+{p 0 48}{bind:provincia      }{txt}{bind: double  }{bind:{txt}%23.0g    }{space 1}{txt}provincia{p_end}
+{p 0 48}{space 44}{bind:  }{res}{res}Provincia{p_end}
+{p 0 48}{bind:comuna         }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:comuna   }{bind:  }{res}{res}Comuna{p_end}
+{p 0 48}{bind:zona           }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:zona     }{bind:  }{res}{res}Zona{p_end}
+{p 0 48}{bind:expr           }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Factor de Expansion Regional{p_end}
+{p 0 48}{bind:expc           }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Factor de Expansion Comunal{p_end}
+{p 0 48}{bind:expr_div       }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Factor de expansion orientacion sexual (r23) e identidad de genero (r24){p_end}
+{p 0 48}{bind:varstrat       }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Estratos de Varianza{p_end}
+{p 0 48}{bind:varunit        }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Conglomerados de Varianza{p_end}
+{p 0 48}{bind:sexo           }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:sexo     }{bind:  }{res}{res}Sexo{p_end}
+{p 0 48}{bind:edad           }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Edad{p_end}
+{p 0 48}{bind:ecivil         }{txt}{bind: double  }{bind:{txt}%47.0g    }{space 1}{bind:ecivil   }{bind:  }{res}{res}Estado civil{p_end}
+{p 0 48}{bind:o1             }{txt}{bind: double  }{bind:{txt}%19.0g    }{space 1}{bind:DICO     }{bind:  }{res}{res}o1. La semana pasada, trabajo al menos una hora, sin considerar los quehaceres{p_end}
+{p 0 48}{bind:o2             }{txt}{bind: double  }{bind:{txt}%19.0g    }{space 1}{bind:DICO     }{bind:  }{res}{res}o2. Aunque no trabajo la semana pasada, realizo alguna actividad por lo menos d{p_end}
+{p 0 48}{bind:o3             }{txt}{bind: double  }{bind:{txt}%19.0g    }{space 1}{bind:DICO     }{bind:  }{res}{res}o3. Aunque no trabajo la semana pasada, tenia algun empleo, negocio u otra acti{p_end}
+{p 0 48}{bind:o6             }{txt}{bind: double  }{bind:{txt}%19.0g    }{space 1}{bind:DICO     }{bind:  }{res}{res}o6. Busco trabajo remunerado o realizo alguna gestion para iniciar una activida{p_end}
+{p 0 48}{bind:oficio1        }{txt}{bind: double  }{bind:{txt}%60.0g    }{space 1}{bind:oficio1  }{bind:  }{res}{res}o9a_cod. Cual es su ocupacion u oficio? (1 digito){p_end}
+{p 0 48}{bind:ytotcorh       }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Ingreso total del hogar corregido{p_end}
+{p 0 48}{bind:ypc            }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Ingreso total per capita del hogar corregido{p_end}
+{p 0 48}{bind:numper         }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Numero de personas en el hogar (excluye sdpa){p_end}
+{p 0 48}{bind:asiste         }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:asiste   }{bind:  }{res}{res}Asiste{p_end}
+{p 0 48}{bind:esc            }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Escolaridad{p_end}
+{p 0 48}{bind:educ           }{txt}{bind: double  }{bind:{txt}%33.0g    }{space 1}{bind:educ     }{bind:  }{res}{res}Nivel Educacional{p_end}
+{p 0 48}{bind:depen          }{txt}{bind: double  }{bind:{txt}%48.0g    }{space 1}{bind:depen    }{bind:  }{res}{res}Dependencia Administrativa{p_end}
+{p 0 48}{bind:activ          }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:activ    }{bind:  }{res}{res}Condicion de actividad{p_end}
+{txt}{hline}
+Sorted by: {res}zona
+{txt}
+{com}. //_2
+. codebook oficio1
+
+{txt}{hline}
+{res}oficio1{right:o9a_cod. Cual es su ocupacion u oficio? (1 digito)}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+{ralign 22:label}:  {res:oficio1}
+
+{col 18}range:  [{res}0{txt},{res}999{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}11{col 51}{txt}missing .:  {res}1,206{txt}/{res}2,164
+
+{txt}{ralign 23: examples:}{col 26}{res}5{col 32}{txt}Trabajadores de los servicios y vendedores de comerci
+{ralign 23: }{col 26}{res}9{col 32}{txt}Trabajadores no calificado
+{ralign 23: }{col 26}{res}.{col 32}{txt}
+{ralign 23: }{col 26}{res}.{col 32}{txt}
+
+{com}. //_3
+. labelbook oficio1
+
+{txt}{hline}
+value label {res}oficio1 
+{txt}{hline}
+
+{col 7}{hi:values}{col 49}{hi:labels}
+{col 8}range:  [{res}0{txt},{res}999{txt}]{col 42}string length:  [{res}8{txt},{res}60{txt}]
+{col 12}N:  {res}11{col 34}{txt}unique at full length:  {res}yes
+{col 9}{txt}gaps:  {res}yes{col 36}{txt}{ralign 20:unique at length 12:}  {res}no
+{col 3}{txt}missing .*:  {res}0{col 44}{txt}null string:  {res}no
+{col 32}{txt}leading/trailing blanks:  {res}no
+{col 37}{txt}numeric -> numeric:  {res}no
+  {hi:definition}
+{txt}{p 0 15 2}{space 11}0{space 2}
+{res}   {ul:Fuerzas Arma}{res}da
+{p_end}
+{txt}{p 0 15 2}{space 11}1{space 2}
+{res}   {ul:Miembros del}{res} poder ejecutivo y de los cuerpos legislativo
+{p_end}
+{txt}{p 0 15 2}{space 11}2{space 2}
+{res}   {ul:Profesionale}{res}s, cientificos e intelectuale
+{p_end}
+{txt}{p 0 15 2}{space 11}3{space 2}
+{res}   {ul:Tecnicos pro}{res}fesionales de nivel medi
+{p_end}
+{txt}{p 0 15 2}{space 11}4{space 2}
+{res}   {ul:Empleados de}{res} oficina
+{p_end}
+{txt}{p 0 15 2}{space 11}5{space 2}
+{res}   {ul:Trabajadores}{res} de los servicios y vendedores de comerci
+{p_end}
+{txt}{p 0 15 2}{space 11}6{space 2}
+{res}   {ul:Agricultores}{res} y trabajadores calificados agropecuarios y pesq
+{p_end}
+{txt}{p 0 15 2}{space 11}7{space 2}
+{res}   {ul:Oficiales, o}{res}perarios y artesanos de artes mecanicas y de otr
+{p_end}
+{txt}{p 0 15 2}{space 11}8{space 2}
+{res}   {ul:Operadores d}{res}e instalaciones y maquinas y montadore
+{p_end}
+{txt}{p 0 15 2}{space 11}9{space 2}
+{res}   {ul:Trabajadores}{res} no calificado
+{p_end}
+{txt}{p 0 15 2}{space 9}999{space 2}
+{res}Sin dato
+{p_end}
+
+{txt}{p 3 15}variables:{space 2}{res}oficio1
+
+{txt}
+{com}. //_4
+. labelbook DICO
+
+{txt}{hline}
+value label {res}DICO 
+{txt}{hline}
+
+{col 7}{hi:values}{col 49}{hi:labels}
+{col 8}range:  [{res}1{txt},{res}9{txt}]{col 42}string length:  [{res}2{txt},{res}19{txt}]
+{col 12}N:  {res}3{col 34}{txt}unique at full length:  {res}yes
+{col 9}{txt}gaps:  {res}yes{col 36}{txt}{ralign 20:unique at length 12:}  {res}yes
+{col 3}{txt}missing .*:  {res}0{col 44}{txt}null string:  {res}no
+{col 32}{txt}leading/trailing blanks:  {res}no
+{col 37}{txt}numeric -> numeric:  {res}no
+  {hi:definition}
+{txt}{p 0 15 2}{space 11}1{space 2}
+{res}Si
+{p_end}
+{txt}{p 0 15 2}{space 11}2{space 2}
+{res}No
+{p_end}
+{txt}{p 0 15 2}{space 11}9{space 2}
+{res}   {ul:No sabe/no r}{res}esponde
+{p_end}
+
+{txt}{p 3 15}variables:{space 2}{res}o1 o2 o3 o6
+
+{txt}
+{com}. //_5
+. gen varnueva=1
+{txt}
+{com}. //_6
+. list varnueva in 1/5
+{txt}
+     {c TLC}{hline 10}{c TRC}
+     {c |} {res}varnueva {txt}{c |}
+     {c LT}{hline 10}{c RT}
+  1. {c |} {res}       1 {txt}{c |}
+  2. {c |} {res}       1 {txt}{c |}
+  3. {c |} {res}       1 {txt}{c |}
+  4. {c |} {res}       1 {txt}{c |}
+  5. {c |} {res}       1 {txt}{c |}
+     {c BLC}{hline 10}{c BRC}
+
+{com}. //_7
+. replace varnueva=7
+{txt}(2,164 real changes made)
+
+{com}. //_8
+. list varnueva in 1/5
+{txt}
+     {c TLC}{hline 10}{c TRC}
+     {c |} {res}varnueva {txt}{c |}
+     {c LT}{hline 10}{c RT}
+  1. {c |} {res}       7 {txt}{c |}
+  2. {c |} {res}       7 {txt}{c |}
+  3. {c |} {res}       7 {txt}{c |}
+  4. {c |} {res}       7 {txt}{c |}
+  5. {c |} {res}       7 {txt}{c |}
+     {c BLC}{hline 10}{c BRC}
+
+{com}. //_9
+. drop varnueva
+{txt}
+{com}. //_10
+. gen ypcapita=ytotcorh/numper
+{txt}(2 missing values generated)
+
+{com}. //_11
+. summarize ypcapita
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}ypcapita {c |}{res}      2,162    357332.5    625617.8          0   2.24e+07
+{txt}
+{com}. //_12
+. list ypcapita ypc in f/10
+{txt}
+     {c TLC}{hline 10}{c -}{hline 8}{c TRC}
+     {c |} {res}ypcapita      ypc {txt}{c |}
+     {c LT}{hline 10}{c -}{hline 8}{c RT}
+  1. {c |} {res}211154.3   211154 {txt}{c |}
+  2. {c |} {res}  285000   285000 {txt}{c |}
+  3. {c |} {res}203264.3   203264 {txt}{c |}
+  4. {c |} {res}116666.7   116667 {txt}{c |}
+  5. {c |} {res} 94511.5    94512 {txt}{c |}
+     {c LT}{hline 10}{c -}{hline 8}{c RT}
+  6. {c |} {res}  267833   267833 {txt}{c |}
+  7. {c |} {res}330504.8   330505 {txt}{c |}
+  8. {c |} {res}248258.2   248258 {txt}{c |}
+  9. {c |} {res}216666.7   216667 {txt}{c |}
+ 10. {c |} {res}  300000   300000 {txt}{c |}
+     {c BLC}{hline 10}{c -}{hline 8}{c BRC}
+
+{com}. //_13
+. codebook edad
+
+{txt}{hline}
+{res}edad{right:Edad}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+
+{col 18}range:  [{res}0{txt},{res}95{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}95{col 51}{txt}missing .:  {res}0{txt}/{res}2,164
+
+{txt}{col 19}mean:{res}{col 26} 37.5457
+{txt}{col 15}std. dev:{res}{col 26} 22.5719
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}       7{col 37}      19{col 47}      36{col 57}      55{col 67}      68
+{txt}
+{com}. //_14
+. gen pet=0
+{txt}
+{com}. replace pet=1 if edad>=15
+{txt}(1,760 real changes made)
+
+{com}. //_15
+. gen pet2=edad
+{txt}
+{com}. recode pet2 (0/14=0) (15/95=1)
+{txt}(pet2: 2143 changes made)
+
+{com}. //_16
+. tab pet
+
+        {txt}pet {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        404       18.67       18.67
+{txt}          1 {c |}{res}      1,760       81.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,164      100.00
+{txt}
+{com}. tab pet2
+
+       {txt}pet2 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        404       18.67       18.67
+{txt}          1 {c |}{res}      1,760       81.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,164      100.00
+{txt}
+{com}. //_17
+. tab1 pet pet2
+
+{res}-> tabulation of pet  
+
+        {txt}pet {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        404       18.67       18.67
+{txt}          1 {c |}{res}      1,760       81.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,164      100.00
+
+-> tabulation of pet2  
+
+       {txt}pet2 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        404       18.67       18.67
+{txt}          1 {c |}{res}      1,760       81.33      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,164      100.00
+{txt}
+{com}. //_18
+. tab1 o1 o2 o3 o6, m
+
+{res}-> tabulation of o1  
+
+      {txt}o1. La semana {c |}
+ pasada, trabajo al {c |}
+menos una hora, sin {c |}
+     considerar los {c |}
+         quehaceres {c |}      Freq.     Percent        Cum.
+{hline 20}{c +}{hline 35}
+                 Si {c |}{res}        920       42.51       42.51
+{txt}                 No {c |}{res}        840       38.82       81.33
+{txt}                  . {c |}{res}        404       18.67      100.00
+{txt}{hline 20}{c +}{hline 35}
+              Total {c |}{res}      2,164      100.00
+
+-> tabulation of o2  
+
+      {txt}o2. Aunque no {c |}
+  trabajo la semana {c |}
+    pasada, realizo {c |}
+   alguna actividad {c |}
+     por lo menos d {c |}      Freq.     Percent        Cum.
+{hline 20}{c +}{hline 35}
+                 Si {c |}{res}         13        0.60        0.60
+{txt}                 No {c |}{res}        827       38.22       38.82
+{txt}                  . {c |}{res}      1,324       61.18      100.00
+{txt}{hline 20}{c +}{hline 35}
+              Total {c |}{res}      2,164      100.00
+
+-> tabulation of o3  
+
+      {txt}o3. Aunque no {c |}
+  trabajo la semana {c |}
+pasada, tenia algun {c |}
+  empleo, negocio u {c |}
+          otra acti {c |}      Freq.     Percent        Cum.
+{hline 20}{c +}{hline 35}
+                 Si {c |}{res}         25        1.16        1.16
+{txt}                 No {c |}{res}        802       37.06       38.22
+{txt}                  . {c |}{res}      1,337       61.78      100.00
+{txt}{hline 20}{c +}{hline 35}
+              Total {c |}{res}      2,164      100.00
+
+-> tabulation of o6  
+
+  {txt}o6. Busco trabajo {c |}
+       remunerado o {c |}
+     realizo alguna {c |}
+       gestion para {c |}
+        iniciar una {c |}
+           activida {c |}      Freq.     Percent        Cum.
+{hline 20}{c +}{hline 35}
+                 Si {c |}{res}         89        4.11        4.11
+{txt}                 No {c |}{res}        713       32.95       37.06
+{txt}                  . {c |}{res}      1,362       62.94      100.00
+{txt}{hline 20}{c +}{hline 35}
+              Total {c |}{res}      2,164      100.00
+{txt}
+{com}. //_19
+. tab o1 if edad<15, m
+
+      {txt}o1. La semana {c |}
+ pasada, trabajo al {c |}
+menos una hora, sin {c |}
+     considerar los {c |}
+         quehaceres {c |}      Freq.     Percent        Cum.
+{hline 20}{c +}{hline 35}
+                  . {c |}{res}        404      100.00      100.00
+{txt}{hline 20}{c +}{hline 35}
+              Total {c |}{res}        404      100.00
+{txt}
+{com}. //_20
+. dis 404+920
+{res}1324
+{txt}
+{com}. dis 1324+13
+{res}1337
+{txt}
+{com}. dis 1337+25
+{res}1362
+{txt}
+{com}. //_21
+. gen act=1 if o1==1 | o2==1 | o3==1
+{txt}(1,206 missing values generated)
+
+{com}. //_22
+. replace act=2 if o6==1
+{txt}(89 real changes made)
+
+{com}. //_23
+. replace act=3 if o1!=1 & o2!=1 & o3!=1 & o6!=1
+{txt}(1,117 real changes made)
+
+{com}. replace act=. if pet==0
+{txt}(404 real changes made, 404 to missing)
+
+{com}. //_24
+. tab1 act activ, m
+
+{res}-> tabulation of act  
+
+        {txt}act {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}        958       44.27       44.27
+{txt}          2 {c |}{res}         89        4.11       48.38
+{txt}          3 {c |}{res}        713       32.95       81.33
+{txt}          . {c |}{res}        404       18.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,164      100.00
+
+-> tabulation of activ  
+
+  {txt}Condicion {c |}
+         de {c |}
+  actividad {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+   Ocupados {c |}{res}        958       44.27       44.27
+{txt}Desocupados {c |}{res}         89        4.11       48.38
+{txt}  Inactivos {c |}{res}        713       32.95       81.33
+{txt}          . {c |}{res}        404       18.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,164      100.00
+{txt}
+{com}. //_25
+. tab act activ, m
+
+           {txt}{c |}           Condicion de actividad
+       act {c |}  Ocupados  Desocupad  Inactivos          . {c |}     Total
+{hline 11}{c +}{hline 44}{c +}{hline 10}
+         1 {c |}{res}       958          0          0          0 {txt}{c |}{res}       958 
+{txt}         2 {c |}{res}         0         89          0          0 {txt}{c |}{res}        89 
+{txt}         3 {c |}{res}         0          0        713          0 {txt}{c |}{res}       713 
+{txt}         . {c |}{res}         0          0          0        404 {txt}{c |}{res}       404 
+{txt}{hline 11}{c +}{hline 44}{c +}{hline 10}
+     Total {c |}{res}       958         89        713        404 {txt}{c |}{res}     2,164 
+
+{txt}
+{com}. //_26
+. label variable act "Actividad"
+{txt}
+{com}. //_27
+. label variable act "Actividad recodificada"
+{txt}
+{com}. //_28
+. label define valactividad 1 "Ocupado" 2 "Desempleado" 3 "Inactivo"
+{txt}
+{com}. //_29
+. label define valactividad 1 "Ocupado" 2 "Desocupado" 3 "Inactivo", replace
+{txt}
+{com}. //_30
+. label define valactividad 9 "No PET", add
+{txt}
+{com}. //_31
+. label values act valactividad
+{txt}
+{com}. //_32
+. tab act, m
+
+  {txt}Actividad {c |}
+recodificad {c |}
+          a {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    Ocupado {c |}{res}        958       44.27       44.27
+{txt} Desocupado {c |}{res}         89        4.11       48.38
+{txt}   Inactivo {c |}{res}        713       32.95       81.33
+{txt}          . {c |}{res}        404       18.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,164      100.00
+{txt}
+{com}. //_33
+. replace act=9 if pet==0
+{txt}(404 real changes made)
+
+{com}. //_34
+. tab act, m
+
+  {txt}Actividad {c |}
+recodificad {c |}
+          a {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    Ocupado {c |}{res}        958       44.27       44.27
+{txt} Desocupado {c |}{res}         89        4.11       48.38
+{txt}   Inactivo {c |}{res}        713       32.95       81.33
+{txt}     No PET {c |}{res}        404       18.67      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      2,164      100.00
+{txt}
+{com}. //_35
+. save data_casen_ayud1, replace
+{txt}(note: file data_casen_ayud1.dta not found)
+file data_casen_ayud1.dta saved
+
+{com}. //_36
+. *log close ayudantia
+. //_^
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\pjcar\Google Drive\201901 - Diseno y Analisis de la Investigacion Social\sol3000_19\SOL3000_19\sessions\a1_recodificar_variables.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}12 May 2019, 02:05:04
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

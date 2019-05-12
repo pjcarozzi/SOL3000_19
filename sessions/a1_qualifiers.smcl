@@ -1,0 +1,126 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\pjcar\Google Drive\201901 - Diseno y Analisis de la Investigacion Social\sol3000_19\SOL3000_19\sessions\a1_qualifiers.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}12 May 2019, 02:02:08
+{txt}
+{com}. //_1
+. summarize esc in f/100
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}esc {c |}{res}         78    11.98718    3.701504          0         21
+{txt}
+{com}. //_2
+. codebook sexo
+
+{txt}{hline}
+{res}sexo{right:Sexo}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+{ralign 22:label}:  {res:sexo}
+
+{col 18}range:  [{res}1{txt},{res}2{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}2,164
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}     1,038{col 33}       1{col 43}{txt}Hombre
+{col 21}{res}     1,126{col 33}       2{col 43}{txt}Mujer
+
+{com}. //_3
+. summarize esc if sexo==2 & edad>=60
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}esc {c |}{res}        243    7.683128    4.826152          0         19
+{txt}
+{com}. //_4
+. sort sexo
+{txt}
+{com}. by sexo: summarize esc
+
+{txt}{hline}
+-> sexo = Hombre
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}esc {c |}{res}        821    11.01218    4.077882          0         22
+
+{txt}{hline}
+-> sexo = Mujer
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}esc {c |}{res}        928    10.85022    4.408996          0         21
+
+{txt}
+{com}. //_5
+. sort folio
+{txt}
+{com}. list sexo in 1/10
+{txt}
+     {c TLC}{hline 8}{c TRC}
+     {c |} {res}  sexo {txt}{c |}
+     {c LT}{hline 8}{c RT}
+  1. {c |} {res} Mujer {txt}{c |}
+  2. {c |} {res}Hombre {txt}{c |}
+  3. {c |} {res} Mujer {txt}{c |}
+  4. {c |} {res}Hombre {txt}{c |}
+  5. {c |} {res}Hombre {txt}{c |}
+     {c LT}{hline 8}{c RT}
+  6. {c |} {res}Hombre {txt}{c |}
+  7. {c |} {res} Mujer {txt}{c |}
+  8. {c |} {res}Hombre {txt}{c |}
+  9. {c |} {res}Hombre {txt}{c |}
+ 10. {c |} {res}Hombre {txt}{c |}
+     {c BLC}{hline 8}{c BRC}
+
+{com}. //_6
+. *by sexo: summarize esc
+. //_7
+. bysort sexo: summarize esc
+
+{txt}{hline}
+-> sexo = Hombre
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}esc {c |}{res}        821    11.01218    4.077882          0         22
+
+{txt}{hline}
+-> sexo = Mujer
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}esc {c |}{res}        928    10.85022    4.408996          0         21
+
+{txt}
+{com}. //_8
+. bysort zona: summarize esc if edad>=45 & sexo==2
+
+{txt}{hline}
+-> zona = Urbano
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}esc {c |}{res}        389    9.532134    4.643155          0         21
+
+{txt}{hline}
+-> zona = Rural
+
+    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}esc {c |}{res}         85    6.976471    4.011817          0         17
+
+{txt}
+{com}. //_^
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\pjcar\Google Drive\201901 - Diseno y Analisis de la Investigacion Social\sol3000_19\SOL3000_19\sessions\a1_qualifiers.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}12 May 2019, 02:02:08
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
