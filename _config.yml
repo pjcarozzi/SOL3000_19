@@ -9,6 +9,11 @@ date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
 hide_title: false            # remove site heading in the header
 post_footer: true            # show previous and next links at the end of each post
 
+# Markdown
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
 # Theme settings
 dark_theme: false            # use the dark mode as default
 dark_header: true            # keep the header dark
