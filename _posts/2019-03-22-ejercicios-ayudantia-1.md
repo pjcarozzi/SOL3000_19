@@ -11,7 +11,7 @@ Utilizando la base de datos [data\_casen\_2017\_1p](https://www.dropbox.com/s/8f
 
 <details>
 
-  <summary>Codigo</a></summary>
+  <summary>Codigo</summary>
 
 ````
 codebook edad
@@ -70,7 +70,3 @@ Deje ns/nr como casos perdidos.
 6. Utilizando la variable _depen_, genere una tabla univariada que dé cuenta de la distribución de porcentajes por dependencia educacional entre quienes asisten a unestablecimiento educacional. Recodifique antes NS/NR como caso perdido. ¿Cuál es la moda? ¿Qué porcentaje de la muestra asiste a una universidad del CRUCH?
 
 7. Genere tablas univariadas que le permitan comparar la distribución por dependencia educacional y zona de residencia entre quienes tienen 17 años o menos. Interprete los resultados.
-
-````
-
-````
