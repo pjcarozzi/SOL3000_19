@@ -1,8 +1,6 @@
 ---
+title: "Ejercicios ayudantia 1"
 categories: ejercicios
-markdown: kramdown
-kramdown:
-  parse_block_html: true
 ---
 
 Utilizando la base de datos [data\_casen\_2017\_1p](https://www.dropbox.com/s/8fo5oebnzdxtoxe/data_casen_2017_1prc.dta?dl=0 "Casen 2017"):
@@ -13,7 +11,7 @@ Utilizando la base de datos [data\_casen\_2017\_1p](https://www.dropbox.com/s/8f
 
   <summary>Codigo</summary>
 
-````
+```
 codebook edad
 gen tedad1=1 	if edad>=0 & edad <=14
 replace tedad1=2 if edad>=15 & edad <=19
@@ -46,7 +44,7 @@ replace tedad1=. if edad==.
 label variable tedad1 "Tramos edad"
 label values tedad1 etramos
 tab tedad1, m
-````
+```
 </details>
 
 2. Recodificar la variable _educ_ en una nueva variable (llamada _neduc_), que tenga los siguientes atributos:
@@ -70,3 +68,4 @@ Deje ns/nr como casos perdidos.
 6. Utilizando la variable _depen_, genere una tabla univariada que dé cuenta de la distribución de porcentajes por dependencia educacional entre quienes asisten a unestablecimiento educacional. Recodifique antes NS/NR como caso perdido. ¿Cuál es la moda? ¿Qué porcentaje de la muestra asiste a una universidad del CRUCH?
 
 7. Genere tablas univariadas que le permitan comparar la distribución por dependencia educacional y zona de residencia entre quienes tienen 17 años o menos. Interprete los resultados.
+
