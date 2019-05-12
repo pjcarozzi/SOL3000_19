@@ -14,5 +14,5 @@ Base de datos: [data\_casen\_2017\_1p](https://www.dropbox.com/s/3ydnojfh37en52n
 3. [Qualifiers y operadores](https://pjcarozzi.github.io/SOL3000_19/qualifiers/ "Parte 3")
 4. [Variables y recodificacion](https://pjcarozzi.github.io/SOL3000_19/recodificar-variables/ "Parte 4")
 
-Actividades adicionales [Ejercicios](https://pjcarozzi.github.io/SOL3000_19/ejercicios-ayudantia-1/)
+[Actividades adicionales](https://pjcarozzi.github.io/SOL3000_19/ejercicios-ayudantia-1/)
 
