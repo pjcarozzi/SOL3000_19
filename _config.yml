@@ -5,7 +5,7 @@ lang: "es"
 
 # Page settings
 permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
-date_format: "%b %d, %y"     # see http://shopify.github.io/liquid/filters/date/
+date_format: "%B %d, %Y     # see http://shopify.github.io/liquid/filters/date/
 hide_title: false            # remove site heading in the header
 post_footer: true            # show previous and next links at the end of each post
 
