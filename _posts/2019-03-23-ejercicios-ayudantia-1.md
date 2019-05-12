@@ -1,9 +1,9 @@
 ---
-title: "Ejercicios ayudantia 1"
+title: "Ejercicios Ayudantia 1"
 categories: ejercicios
 ---
 
-Utilizando la base de datos [data\_casen\_2017\_1p](https://www.dropbox.com/s/8fo5oebnzdxtoxe/data_casen_2017_1prc.dta?dl=0 "Casen 2017"):
+Utilizando la base de datos [data\_casen\_2017\_1p](https://www.dropbox.com/s/3ydnojfh37en52n/data_casen_2017_1p.dta?dl=0 "Casen 2017"):
 
 Pregunta 1. Recodificar la variable _edad_ por tramos (_tedad_), que contemple los tramos: 0-14; 15-19; 20-24;25-34; 35-44; 45-54; 55-64; 65 y más.
 
